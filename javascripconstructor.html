@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+
+//creating objects using constructor function
+function student(st_name,st_age,st_dept)
+{
+this.st_name=st_name;
+this.st_age=st_age;
+this.st_dept=st_dept;
+
+}/*
+function student(st_name,st_age,st_dept,st_year)
+{
+this.st_name=st_name;
+this.st_age=st_age;
+this.st_dept=st_dept;
+this.st_year=st_year;
+}
+const st2=new student('naga',25,'CSE',3);
+document.getElementById("demo1").innerHTML=st2.st_year;
+*/
+
+const st1=new student('sanjeev',25,'CSE');
+document.getElementById("demo").innerHTML=st1.st_name;
+
+const st3=new student('raghu',25,'CSE');
+document.getElementById("demo2").innerHTML=st3.st_name;
+
+//we can also add properties or methods to constructor function
+student.prototype.gender='male';
+document.getElementById("demo3").innerHTML=student.prototype;
+console.log(student.prototype);
+document.getElementById("demo4").innerHTML=st1.prototype;
+
+
+</script>
+
+<body>
+</html>

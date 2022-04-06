@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>
+var numbers = ["one", "two", "three"];
+console.log(numbers);
+console.table(numbers);
+
+var numbers2 = [["one", "1", "I"], ["two", "2", "II"], ["three", "2", "III"]];
+console.log(numbers2);
+console.table(numbers2);
+
+function details(first_name,last_name,age)
+{
+this.first_name=first_name;
+this.last_name=last_name;
+this.age=age;
+}
+var obj=new details("Naga Sanjeev","Madasu",25);
+console.log(obj);
+console.table(obj);//it will take as an object.
+
+var obj1=new details("Rahul","Jonalagada",25);
+var obj2=new details("Srinivas","Guntamukala",24);
+console.log(obj,obj1,obj2);
+console.table([obj,obj1,obj2]);//it will take each oobject into an array and finally into object
+
+console.table([obj,obj1,obj2], ["first_name","age"]);// it will print the particular column value.
+
+
+</script>
+</body>
+</html>

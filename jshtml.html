@@ -1,0 +1,13 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+var txt = {name:"sanjeev", age:30, friends:["ram","jagadesh","rahul"],address:{"city":"visakhapatnam","state":"Andhra Pradesh"}};//this is the object
+var st=JSON.stringify(txt);
+
+document.getElementById("demo").innerHTML = st;
+document.getElementById("demo2").innerHTML = st.substr(1);
+</script>
+</body>
+</html>
